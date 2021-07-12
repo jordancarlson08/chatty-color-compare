@@ -15,7 +15,7 @@ def get_col_name(hex, colors):
 
 # testColor = "#D8E8FF"
 print("")
-colorPalette = str(input("Enter color palette to test against: "))
+colorPalette = str(input("Enter color palette to test against\ngray, brand, blue, yellow, pink, or red: "))
 print("")
 testColor = '#' + str(input("Enter hex to compare: #"))
 
