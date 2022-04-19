@@ -15,95 +15,109 @@ def get_col_name(hex, colors):
 
 # testColor = "#D8E8FF"
 print("")
-colorPalette = str(input("Enter color palette to test against\ngray, brand, blue, yellow, pink, or red: "))
+colorPalette = str(input("Enter color palette to test against\ngray, chatty_green, blavender, highlighter, pink, cream, or holiday: "))
 print("")
 testColor = '#' + str(input("Enter hex to compare: #"))
 
 grays = {
-	"gray_50":"#F8FAFC",
-    "gray_100":"#F1F5F9",
-    "gray_200":"#E2E8F0",
-    "gray_300":"#CFD8E3",
-    "gray_400":"#B8C3D1",
-    "gray_500":"#97A6BA",
-    "gray_600":"#7A899F",
-    "gray_700":"#52627A",
-    "gray_800":"#3D495C",
-    "gray_900":"#27303F",
+	"gray_50":"#F9FAFC",
+    "gray_100":"#EEF1F7",
+    "gray_200":"#E3E9F3",
+    "gray_300":"#C3CEDF",
+    "gray_400":"#94A7BF",
+    "gray_500":"#607A94",
+    "gray_600":"#3C546A",
+    "gray_700":"#263A4B",
+    "gray_800":"#1D2D3A",
+    "gray_900":"#1A2A36",
 }
 
-brands = {
-	"brand_50":"#F0FFFB",
-    "brand_100":"#E1FCF7",
-    "brand_200":"#B0F0E2",
-    "brand_300":"#80E0CE",
-    "brand_400":"#00CFB4",
-    "brand_500":"#00A896",
-    "brand_600":"#008177",
-    "brand_700":"#006961",
-    "brand_800":"#00504A",
-    "brand_900":"#002825",
+chatty_green = {
+	"chatty_green_50":"#F2FFFD",
+    "chatty_green_100":"#D6FCF5",
+    "chatty_green_200":"#BCF9ED",
+    "chatty_green_300":"#8CF0DD",
+    "chatty_green_400":"#64E2CA",
+    "chatty_green_500":"#44CFB4",
+    "chatty_green_600":"#32B69D",
+    "chatty_green_700":"#239580",
+    "chatty_green_800":"#186D5D",
+    "chatty_green_900":"#0F4239",
 }
 
-blues = {
-	"blue_50":"#F7FBFF",
-    "blue_100":"#EBF8FF",
-    "blue_200":"#C0E6FA",
-    "blue_300":"#9CCEFF",
-    "blue_400":"#69A1F0",
-    "blue_500":"#357FE8",
-    "blue_600":"#255DAF",
-    "blue_700":"#1B4685",
-    "blue_800":"#112E5A",
-    "blue_900":"#09172D",
+blavender = {
+	"blavender_50":"#F5F8FF",
+    "blavender_100":"#E1E8FE",
+    "blavender_200":"#CDD9FD",
+    "blavender_300":"#A8BCF7",
+    "blavender_400":"#88A1EF",
+    "blavender_500":"#718DE2",
+    "blavender_600":"#5F7BD0",
+    "blavender_700":"#4F6AB8",
+    "blavender_800":"#40589C",
+    "blavender_900":"#33477D",
 }
 
-yellows = {
-    "yellow_50":"#FCFAF3",
-    "yellow_100":"#FFF9DE",
-    "yellow_200":"#FFEEA3",
-    "yellow_300":"#FFE67B",
-    "yellow_400":"#F9D22D",
-    "yellow_500":"#E2B330",
-    "yellow_600":"#C78516",
-    "yellow_700":"#8C5C0B",
-    "yellow_800":"#503300",
-    "yellow_900":"#281A00",
+highlighter = {
+    "highlighter_50":"#FFFFF6",
+    "highlighter_100":"#FEFFDF",
+    "highlighter_200":"#FCFFC9",
+    "highlighter_300":"#EFFD97",
+    "highlighter_400":"#DBF36D",
+    "highlighter_500":"#E285D6",
+    "highlighter_600":"#C0DC46",
+    "highlighter_700":"#799717",
+    "highlighter_800":"#50680B",
+    "highlighter_900":"#273604",
 }
 
-pinks = {
-	"pink_50":"#FFF5F5",
-    "pink_100":"#FCEDEE",
-    "pink_200":"#FCCEDD",
-    "pink_300":"#FCB4D0",
-    "pink_400":"#EA73B4",
-    "pink_500":"#CA3975",
-    "pink_600":"#991658",
-    "pink_700":"#7A1447",
-    "pink_800":"#5A1135",
-    "pink_900":"#2D091B",
+pink = {
+    "pink_50":"#FFFAFE",
+    "pink_100":"#FFECFD",
+    "pink_200":"#FFDEFD",
+    "pink_300":"#FDBEF5",
+    "pink_400":"#F5A2EA",
+    "pink_500":"#E285D6",
+    "pink_600":"#C96BBC",
+    "pink_700":"#A8549D",
+    "pink_800":"#803D77",
+    "pink_900":"#572850",
 }
 
-reds = {
-	"red_50":"#FFF4EE",
-    "red_100":"#FFE1D4",
-    "red_200":"#FFB69C",
-    "red_300":"#FF9473",
-    "red_400":"#FF534A",
-    "red_500":"#E02222",
-    "red_600":"#AD0B0B",
-    "red_700":"#840E0E",
-    "red_800":"#5A1111",
-    "red_900":"#2D0909",
+cream = {
+	"cream_50":"#FFFBF8",
+    "cream_100":"#F9EDE5",
+    "cream_200":"#F2DFD2",
+    "cream_300":"#ECC3A7",
+    "cream_400":"#E2A982",
+    "cream_500":"#D29063",
+    "cream_600":"#BB784A",
+    "cream_700":"#9C5F36",
+    "cream_800":"#774625",
+    "cream_900":"#4F2D16",
+}
+
+holiday = {
+	"holiday_50":"#FFF7F6",
+    "holiday_100":"#FFE4DE",
+    "holiday_200":"#FFD0C6",
+    "holiday_300":"#FFA491",
+    "holiday_400":"#F97E66",
+    "holiday_500":"#EB6044",
+    "holiday_600":"#CC4428",
+    "holiday_700":"#A62E16",
+    "holiday_800":"#781D0B",
+    "holiday_900":"#471005",
 }
 
 colors = {
 	"gray": grays,
-	"brand": brands,
-	"blue": blues,
-	"yellow": yellows,
-	"pink": pinks,
-	"red": reds,
+	"chatty_green": chatty_green,
+	"blavender": blavender,
+	"highlighter": highlighter,
+    "pink": pink,
+	"cream": cream,
+	"holiday": holiday,
 }
 
 selectedPalette = colors[colorPalette]
